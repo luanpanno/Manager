@@ -1,7 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Context\" />
+		<Folder Include="Mappings\" />
+		<Folder Include="Migrations\" />
+		<Folder Include="Repositories\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Manager.Domain\Manager.Domain.csproj" />
+	</ItemGroup>
 
 </Project>
