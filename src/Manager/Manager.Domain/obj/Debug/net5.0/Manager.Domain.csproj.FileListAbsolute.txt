@@ -1,0 +1,12 @@
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\bin\Debug\net5.0\Manager.Domain.deps.json
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\bin\Debug\net5.0\Manager.Domain.dll
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\bin\Debug\net5.0\ref\Manager.Domain.dll
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\bin\Debug\net5.0\Manager.Domain.pdb
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.csproj.AssemblyReference.cache
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.AssemblyInfoInputs.cache
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.AssemblyInfo.cs
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.dll
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\ref\Manager.Domain.dll
+C:\Users\luanp_8tvnwng\www\Manager\src\Manager\Manager.Domain\obj\Debug\net5.0\Manager.Domain.pdb
