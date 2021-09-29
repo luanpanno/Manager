@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
+using System;
 
 namespace Manager.Infra.Repositories
 {
@@ -17,34 +19,33 @@ namespace Manager.Infra.Repositories
             _context = context;
         }
 
+        public async Task<ICollection<User>> GetAsNoTrackingAsync(Expression<Func<User, bool>> expression)
+        {
+            return await _context.Set<User>()
+                                .AsNoTracking()
+                                .Where(expression)
+                                .ToListAsync();
+        }
+
         public async Task<User> GetByEmailAsync(string email)
         {
-            var user = await _context.Set<User>()
-                                .AsNoTracking()
-                                .Where(x => x.Email.ToLower() == email.ToLower())
-                                .ToListAsync();
+            var users = await this.GetAsNoTrackingAsync(x => x.Email.ToLower() == email.ToLower());
 
-            return user.FirstOrDefault();
+            return users.FirstOrDefault();
         }
 
-        public async Task<List<User>> SearchByEmailAsync(string email)
+        public async Task<ICollection<User>> SearchByEmailAsync(string email)
         {
-            var user = await _context.Set<User>()
-                    .AsNoTracking()
-                    .Where(x => x.Email.ToLower().Contains(email.ToLower()))
-                    .ToListAsync();
+            var users = await this.GetAsNoTrackingAsync(x => x.Email.ToLower().Contains(email.ToLower()));
 
-            return user;
+            return users;
         }
 
-        public async Task<List<User>> SearchByNameAsync(string name)
+        public async Task<ICollection<User>> SearchByNameAsync(string name)
         {
-            var user = await _context.Set<User>()
-                                .AsNoTracking()
-                                .Where(x => x.Name.ToLower().Contains(name.ToLower()))
-                                .ToListAsync();
+            var users = await this.GetAsNoTrackingAsync(x => x.Name.ToLower().Contains(name.ToLower()));
 
-            return user;
+            return users;
         }
     }
 }

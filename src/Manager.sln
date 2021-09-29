@@ -5,13 +5,16 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Api", "Manager\Manager.Api\Manager.Api.csproj", "{6F95FA7E-2055-4957-8665-5AFF5A4A1E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Services", "Manager\Manager.Services\Manager.Services.csproj", "{7EB126E1-4F9B-4BD7-A95A-04AE01253CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Services", "Manager\Manager.Services\Manager.Services.csproj", "{7EB126E1-4F9B-4BD7-A95A-04AE01253CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Domain", "Manager\Manager.Domain\Manager.Domain.csproj", "{BBD2DFAA-3F3D-4933-A6F9-356A76675C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Domain", "Manager\Manager.Domain\Manager.Domain.csproj", "{BBD2DFAA-3F3D-4933-A6F9-356A76675C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Infra", "Manager\Manager.Infra\Manager.Infra.csproj", "{E3C49B06-28ED-41BD-BA87-1C4016285729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Infra", "Manager\Manager.Infra\Manager.Infra.csproj", "{E3C49B06-28ED-41BD-BA87-1C4016285729}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBD2DFAA-3F3D-4933-A6F9-356A76675C1E} = {BBD2DFAA-3F3D-4933-A6F9-356A76675C1E}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Core", "Manager\Manager.Core\Manager.Core.csproj", "{E459BF53-ED74-4404-8879-8547DD865EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Core", "Manager\Manager.Core\Manager.Core.csproj", "{E459BF53-ED74-4404-8879-8547DD865EE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
