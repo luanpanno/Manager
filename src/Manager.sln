@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Api", "Manager\Manager.Api\Manager.Api.csproj", "{6F95FA7E-2055-4957-8665-5AFF5A4A1E9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E3C49B06-28ED-41BD-BA87-1C4016285729} = {E3C49B06-28ED-41BD-BA87-1C4016285729}
+		{BBD2DFAA-3F3D-4933-A6F9-356A76675C1E} = {BBD2DFAA-3F3D-4933-A6F9-356A76675C1E}
+		{7EB126E1-4F9B-4BD7-A95A-04AE01253CB4} = {7EB126E1-4F9B-4BD7-A95A-04AE01253CB4}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager.Services", "Manager\Manager.Services\Manager.Services.csproj", "{7EB126E1-4F9B-4BD7-A95A-04AE01253CB4}"
 EndProject
