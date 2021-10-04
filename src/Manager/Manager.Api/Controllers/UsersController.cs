@@ -4,6 +4,7 @@ using Manager.Api.ViewModels;
 using Manager.Core.Exceptions;
 using Manager.Services.Dtos;
 using Manager.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace Manager.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAsync()
         {
             try
@@ -51,6 +53,7 @@ namespace Manager.Api.Controllers
 
         [HttpGet]
         [Route("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetAsync(
             [FromRoute] long id
         )
@@ -80,6 +83,7 @@ namespace Manager.Api.Controllers
 
         [HttpGet]
         [Route("email")]
+        [Authorize]
         public async Task<IActionResult> GetByEmailAsync(
             [FromQuery] string search
         )
@@ -109,6 +113,7 @@ namespace Manager.Api.Controllers
 
         [HttpGet]
         [Route("list-by-email")]
+        [Authorize]
         public async Task<IActionResult> SearchByEmailAsync(
             [FromQuery] string search
         )
@@ -138,6 +143,7 @@ namespace Manager.Api.Controllers
 
         [HttpGet]
         [Route("list-by-name")]
+        [Authorize]
         public async Task<IActionResult> SearchByNameAsync(
             [FromQuery] string search
         )
@@ -166,6 +172,7 @@ namespace Manager.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> PostAsync(
             [FromBody] CreateUserViewModel model
         )
@@ -196,6 +203,7 @@ namespace Manager.Api.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> PutAsync(
             [FromBody] UpdateUserViewModel model
         )
@@ -227,6 +235,7 @@ namespace Manager.Api.Controllers
 
         [HttpDelete]
         [Route("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutAsync(
             [FromRoute] long id
         )

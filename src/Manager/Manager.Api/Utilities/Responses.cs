@@ -15,6 +15,16 @@ namespace Manager.Api.Utilities
             };
         }
 
+        public static ResultViewModel ApplicationErrorMessage(string message)
+        {
+            return new ResultViewModel
+            {
+                Message = "Internal Error",
+                Success = false,
+                Data = message
+            };
+        }
+
         public static ResultViewModel DomainErrorMessage(string message)
         {
             return new ResultViewModel
